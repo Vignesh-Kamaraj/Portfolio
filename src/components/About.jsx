@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import my from '../assets/my photo (2).png'
 
 const About = () => {
     const navigate = useNavigate()
@@ -11,7 +12,7 @@ const About = () => {
       </div>
     <div className="container about_container">
         <div className="about_me-image">
-          <img src='src\assets\my photo (1).JPG' alt='' className='bg1'/>
+          <img src={my} alt='' className='bg1'/>
         </div>
      
       <div className="about_content">
