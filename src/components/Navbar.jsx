@@ -21,7 +21,7 @@ function Navbar() {
         <Link to='/About' className='menuitem'>About</Link>
         <Link to='/Skills' className='menuitem'>Skills</Link>
         <Link to='/Projects' className='menuitem'>Projects</Link>
-        <Link to='https://www.linkedin.com/in/vignesh-kamaraj-86b78228b' className='menuitem linked'><FaLinkedin /></Link>
+        <a href='https://www.linkedin.com/in/vignesh-kamaraj-86b78228b' target='_blank' className='menuitem linked'><FaLinkedin /></a>
 
         </div>
         <button className="menubtn" onClick={()=>{navigate('/Contact')}}>
