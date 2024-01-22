@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  color: white;
+}
+
+body {
+  background: rgb(30, 30, 30);
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+#intro {
+  padding-top: 5%;
+  height: calc(100vh - 4rem);
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap-reverse; */
+}
+
+.bg {
+  object-fit: cover;
+  width: 25%; /* Adjusted width for better responsiveness */
+  min-width: 200px; /* Set a maximum width for larger screens */
+  border: 3px solid orange;
+  border-radius: 3rem;
+}
+
+.introcontent {
+  width:50%; /* Adjusted width for better responsiveness */
+  padding: 2rem;
+  font-size: 2rem; /* Adjusted font size for better responsiveness */
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hello {
+  font-size: 1.5rem; /* Adjusted font size for better responsiveness */
+  font-weight: 400;
+}
+
+.introname {
+  color: yellow;
+}
+
+.intropara {
+  font-size: 1rem; /* Adjusted font size for better responsiveness */
+  font-weight: 100;
+}
+
+.btn {
+  background: white;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  background-color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+#intro{
+  padding: 0 2px;
+  gap: 2px;
+  height: 75vh;
+}
+
+}
+@media only screen and (max-width: 425px) {
+  #intro{
+    flex-wrap: wrap-reverse;
+
+    gap: 2px;
+  }
+  .introcontent{
+    width: 100%;
+    padding-left: 100px;
+  }
+  }
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  color: white;
+
+}
+
+body{
+  background:rgb(30, 30, 30);
+  overflow: hidden;
+  overflow-y:scroll;
+  width: 100%;
+} */
+
+.navbar{
+  height: 5rem;
+  width:100vw;
+  max-width: 75rem;
+  margin:0 auto;
+  padding: 1rem 2rem;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: rgb(30, 30, 30);
+
+}
+
+.logo{
+  object-fit: cover;
+  height: 3rem;
+  width: 4rem;
+}
+
+.menuitem{
+  margin:1rem;
+  cursor: pointer;
+}
+.menuitem:hover{
+  color:orange;
+  padding-bottom:0.5rem ;
+  border-bottom: 3px solid orange ;
+}
+
+.menubtn{
+  width:7rem;
+  height:2.5rem;
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+
+}
+
+.menubtn:hover{
+  background-color: orange;
+
+}
+.toggle{
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+.togglebtn{
+  display: none;
+}
+.open{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5rem; /* Adjust as needed */
+  right: 2rem; /* Adjust as needed */
+  background-color: #8b7474; /* Set your desired background color */
+  padding: 1rem;
+  border-radius: 5px;
+}
+.close{
+  display: none;
+}
+.b{
+  color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+  .togglebtn{
+    display:block;
+    border: none;
+  }
+  .togglebtn:hover{
+    background-color: orange;
+    border-radius: 10px;
+  }
+  .menu{
+    display: none;
+  }
+  .menubtn{
+    display: none;
+  }
+  }
+/* .......................... */
+/* #intro{
+  padding-top: 5%;
+  height:calc(100vh-4rem);
+  width:100%;
+  max-width: 75rem;
+  margin:0 auto;
+  display: flex;
+  gap: 1rem;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+
+}
+
+.bg{
+object-fit: cover;
+width:30%;
+min-width: 200px;
+border: 3px solid orange;
+border-radius: 3rem;
+
+
+}
+
+.introcontent{
+width:50%;
+  padding: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  flex-wrap: wrap;
+
+}
+
+.hello{
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.introname{
+  color: yellow;
+}
+
+.intropara{
+  font-size: medium;
+  font-weight: 100;
+}
+
+.btn{
+  background: white;
+  color:black;
+  border: none;
+  padding: 0.75rem 1.50rem;
+  border-radius: 2rem;
+}
+
+.btn:hover{
+  background-color: orange;
+} */
+
+/*......................................*/
+
+.skillstitle{
+text-align: center;
+padding: 1rem 1rem;
+
+}
+.skills_container{
+  display:flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: calc(100vw/2.5);
+  min-width: calc(100vw/3.5);
+  min-height:calc(100vh/3);
+  gap: 2rem;
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 3px solid orange;
+  text-align: center;
+} 
+
+.skills:hover{
+  border-color:white;
+  cursor: default;
+  background-color: orange;
+}
+
+.skills_content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+}
+.skills_details{
+  display: flex;
+  gap: 1rem;
+}
+
+
+/*=============Mediaqueries- (small devices)================================*/
+@media only screen and (max-width: 525px) {
+  #skills{
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 100vw;
+    align-items: center;
+  }
+.skills{
+  width:100%;
+  min-width: 100%;
+}
+  }
+/*.......................*/
+
+.projects_container{
+  display:flex;
+  justify-content: space-around;
+  gap: 2.5rem;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
+.credentials{
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+.description{
+  margin-bottom: 1.5rem;
+}
+
+
+
+.project_item{
+  min-width:calc(100vw/5);
+  max-width: calc(100vw/2.5);
+  background-color: var(--color-bg-variant);
+  padding: 1.3rem;
+  border:3px solid orange;
+  border-radius: 2rem;
+  margin-right: 1rem;
+  transition: var(--transition);
+  overflow:hidden;
+  
+}
+.project_item:hover{
+  border-color: var(--color-primary-variant);
+  background: orange;
+}
+
+.project_item-image{
+  object-fit:cover;
+  border-radius: 1.5rem;
+  width:100%;
+  min-width: 100px;
+  min-height: 100px;
+
+
+}
+
+.project_item h3{
+  margin: 1.2rem 0 1rem;
+}
+
+.project_item-link{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  
+}
+#btn1:hover{
+border: 2px solid white;
+color:white
+}
+
+@media only screen and (max-width: 525px) {
+  .project_item{
+min-width: none;
+max-width: none;
+width: 100%;
+  }
+}
+
+/*...............................*/
+#about{
+  height: 100vh;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.about_container{
+
+  display:flex;
+ align-items: center;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ gap:2rem;
+}
+.bg1{
+  object-fit: cover;
+  width:50%;
+  min-width: 200px;
+  border: 3px solid orange;
+  border-radius: 5rem;
+  align-items: center;
+  }
+  .about_me-image{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  .about_content{
+    width:60%;
+    display: flex;
+    min-width: 400px;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+  }
+  p{
+    line-height: 2rem;
+  }
+
+  @media only screen and (max-width: 525px) {
+    #about{
+margin: 10px 10px 10px 10px;
+    }
+
+    }
+  
+
+  /*..............................*/
+  .contact_container{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .contact_options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:3rem;
+    flex-wrap: wrap;
+  }
+  .contact_option{
+    padding: 10px;
+    min-height: 10vh;
+    border:3px solid orange;
+    border-radius: 1rem;
+    gap:3rem;
+  }
+  .contact-1{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  .contact-2{
+    display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 2rem;
+  }
+  h5{
+    text-align: center;
+    padding-top: 12px;
+  }
+  h2{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: 3px solid orange;
+    border-radius: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 30%;
+  }
+  .form{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+  }
