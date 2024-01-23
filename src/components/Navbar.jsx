@@ -12,7 +12,6 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
     console.log(isMenuOpen)
   };
-  
 
   return <>
     <nav className="navbar">
@@ -31,11 +30,11 @@ function Navbar() {
         <div className='toggle'></div>
         <button className='togglebtn' onClick={handleMenuToggle}><HiOutlineSquares2X2 size={40} /></button>
         <div className={`${isMenuOpen ? 'open' : 'close'}`}>
-        <Link to='/Home' className="menuitem">Home</Link>
-        <Link to='/About' className="menuitem">About</Link>
-        <Link to='/Skills' className="menuitem">Skills</Link>
-        <Link to='/Projects' className="menuitem">Projects</Link>
-        <Link to='https://www.linkedin.com/in/vignesh-kamaraj-86b78228b' target='_blank' className="menuitem"><FaLinkedin /></Link>
+        <Link to='/Home' className="menuitem" onClick={handleMenuToggle}>Home</Link>
+        <Link to='/About' className="menuitem" onClick={handleMenuToggle}>About</Link>
+        <Link to='/Skills' className="menuitem" onClick={handleMenuToggle}>Skills</Link>
+        <Link to='/Projects' className="menuitem" onClick={handleMenuToggle}>Projects</Link>
+        <Link to='https://www.linkedin.com/in/vignesh-kamaraj-86b78228b' target='_blank' className="menuitem" onClick={handleMenuToggle}><FaLinkedin /></Link>
         </div>
 
     </nav>
