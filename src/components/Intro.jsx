@@ -11,7 +11,7 @@ function Intro() {
             <p className="intropara">I am a skilled Full Stack Developer</p>
             <Link to='/Contact'><button className="btn">Hire me</button></Link><Link to='https://drive.google.com/file/d/1INrIwEGmgcjcUBbZ5Vp3Nca5VxXRBu1p/view?usp=sharing' target='_blank'><button className="btn">Resume</button></Link>
         </div>
-        <img src={my} alt="" className="bg" />
+        <img src={my} alt="img" className="bg" />
     </section>
     </>
 }
