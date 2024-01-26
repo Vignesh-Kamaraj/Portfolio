@@ -54,7 +54,7 @@ body {
 .introname {
   background-image: url("C:\Users\Vignesh PK\Desktop\MERN STACK\Portfolio\src\assets\fy5Z.gif");
   background-size: cover;
-  background-position:top;
+  background-position:bottom;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
