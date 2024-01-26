@@ -53,12 +53,13 @@ body {
 }
 
 .introname {
-  background-image: url("images\fy5Z.gif");
+  /* background-image: url("fy5Z.gif");
   background-size: cover;
   background-position:bottom;
   color: transparent;
   background-clip: text;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; */
+  color: gold;
 }
 
 .intropara {
