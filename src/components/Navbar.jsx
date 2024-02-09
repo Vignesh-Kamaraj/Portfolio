@@ -35,6 +35,7 @@ function Navbar() {
         <Link to='/Skills' className="menuitem" onClick={handleMenuToggle}>Skills</Link>
         <Link to='/Projects' className="menuitem" onClick={handleMenuToggle}>Projects</Link>
         <Link to='https://www.linkedin.com/in/vignesh-kamaraj-86b78228b' target='_blank' className="menuitem" onClick={handleMenuToggle}><FaLinkedin /></Link>
+        <Link to='/Contact' className="menuitem" onClick={handleMenuToggle}>Contact Me</Link>
         </div>
 
     </nav>
